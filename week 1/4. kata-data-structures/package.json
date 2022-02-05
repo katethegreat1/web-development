@@ -1,0 +1,23 @@
+{
+  "name": "kata-data-structures",
+  "version": "2.0.1",
+  "description": "Kata for data Structures",
+  "scripts": {
+    "test": "jest --watchAll --noStackTrace",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-academy-challenges/kata-data-structures.git"
+  },
+  "author": "EDA",
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": "eda"
+  },
+  "devDependencies": {
+    "eslint": "7.9.0",
+    "eslint-config-eda": "0.1.4",
+    "jest": "^26.0.1"
+  }
+}
