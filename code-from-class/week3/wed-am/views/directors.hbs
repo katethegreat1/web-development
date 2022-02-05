@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Director Name</th>
+  </tr>
+  {{#each directors}}
+  <tr>
+    <td>
+      {{id}}
+    </td>
+    <td>
+      {{name}}
+    </td>
+  </tr>
+  {{/each}}
+</table>
+
+<a href="/directors/create">➕ New</a>

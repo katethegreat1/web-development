@@ -1,0 +1,31 @@
+{
+  "name": "handlebars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node .",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "express",
+    "handlebars"
+  ],
+  "author": "EDA",
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": "eda"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-handlebars": "^3.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.6.0",
+    "eslint-config-eda": "^0.1.5",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15"
+  }
+}

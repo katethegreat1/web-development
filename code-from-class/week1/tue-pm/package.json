@@ -1,0 +1,24 @@
+{
+  "name": "tuesday-demo",
+  "version": "0.0.1",
+  "description": "npm gitignore ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "cow-talk": "cowsay JavaScript FTW!",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "git",
+    "blah"
+  ],
+  "author": "EDA",
+  "license": "ISC",
+  "dependencies": {
+    "cowsay": "^1.5.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}

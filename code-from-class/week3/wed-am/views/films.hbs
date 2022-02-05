@@ -1,0 +1,26 @@
+<table>
+  <tr>
+    <th>Film Name</th>
+    <th>Genre</th>
+    <th>Director Name</th>
+    <th>Quote</th>
+  </tr>
+  {{#each films}}
+  <tr>
+    <td>
+      {{filmName}}
+    </td>
+    <td>
+      {{genre}}
+    </td>
+    <td>
+      {{directorName}}
+    </td>
+    <td>
+      {{quote}}
+    </td>
+  </tr>
+  {{/each}}
+</table>
+
+<a href="/films/create">➕ New</a>

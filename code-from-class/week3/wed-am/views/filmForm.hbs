@@ -1,0 +1,27 @@
+<h2>Film Form</h2>
+
+<form action="/films/create" method="post">
+  <div>
+    <input type="text" name="name" placeholder="Enter film name">
+  </div>
+  <div>
+    <input type="text" name='genre' placeholder="Enter genre" />
+  </div>
+  <div>
+    <select name="directorId" id="">
+      {{#each directors}}
+        <option value="{{id}}">{{name}}</option>
+      {{/each}}
+    </select>
+  </div>
+  <div>
+
+    <select name="quoteId" id="">
+      {{#each quotes}}
+        <option value="{{id}}">{{quote}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <button>Create</button>
+</form>

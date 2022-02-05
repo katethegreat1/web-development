@@ -1,0 +1,34 @@
+<div class="contentContainer">
+
+    <div class="listingContainer">
+        <h3>Artists<h3>
+        <ul class="artistListing">
+            {{#each artists}}
+                {{#if isDeceased}}
+                <li class='artistListing__item' data-test-deceased>The Estate of {{name}}</li>
+                {{else}}
+                <li class='artistListing__item'>{{name}}</li>
+                {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="profileContainer">
+        <ul class="artistProfile">
+            {{#each artists}}
+            <li>
+                <h2>{{name}}</h2>
+                <img src="{{portrait}}">
+                <h3>Artworks:</h3>
+                <ul class="artworkListing">
+                {{#each artworks}}
+                    <li><img src="{{image}}"></li>
+                    <li>{{name}}, {{year}}</li>
+                {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+
+</div>

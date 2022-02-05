@@ -1,0 +1,17 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "tdd"
+  ],
+  "author": "EDA",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.7"
+  }
+}

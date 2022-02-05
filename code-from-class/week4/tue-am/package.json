@@ -1,0 +1,51 @@
+{
+  "name": "tue-am",
+  "version": "1.0.0",
+  "description": "intro to state and hooks",
+  "main": "server.js",
+  "keywords": [
+    "state",
+    "react",
+    "hooks"
+  ],
+  "author": "EDA",
+  "license": "ISC",
+  "scripts": {
+    "start": "run-p webpack server",
+    "dev": "run-p client server",
+    "webpack": "webpack --config client/webpack.config.js",
+    "client": "npm run webpack -- --watch",
+    "server": "node server",
+    "lint": "eslint ."
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "eda"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "eslint": "7.9.0",
+    "eslint-config-eda": "0.1.4",
+    "jest": "^27.0.4",
+    "npm-run-all": "^4.1.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  }
+}

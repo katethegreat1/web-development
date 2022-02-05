@@ -1,0 +1,19 @@
+{
+  "name": "express-demo",
+  "version": "1.0.0",
+  "description": "Setting up our first web server with express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "jest --watchAll --verbose"
+  },
+  "author": "EDA",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
+  }
+}

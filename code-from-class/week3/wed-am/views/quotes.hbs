@@ -1,0 +1,19 @@
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>The Best quote</th>
+  </tr>
+  {{#each quotes}}
+  <tr>
+    <td>
+      {{id}}
+    </td>
+    <td>
+      {{quote}}
+    </td>
+  </tr>
+  {{/each}}
+</table>
+
+<a href="/quotes/create">➕ New</a>

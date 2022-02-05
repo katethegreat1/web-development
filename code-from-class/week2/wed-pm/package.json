@@ -1,0 +1,30 @@
+{
+  "name": "express-router",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "router"
+  ],
+  "author": "EDA",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "eslintConfig": {
+    "extends": "eda"
+  },
+  "devDependencies": {
+    "eslint": "7.9.0",
+    "eslint-config-eda": "0.1.4",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15"
+  }
+}

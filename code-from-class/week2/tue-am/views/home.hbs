@@ -1,0 +1,39 @@
+<div class="mainContainer">
+    <div class="contentContainer">
+
+        <div class="listingContainer">
+            <h3>Artists<h3>
+            <ul class="artistListing">
+                {{#each artists}}
+                    {{#if isDeceased}}
+                    <li>The Estate of {{name}}</li>
+                    {{else}}
+                    <li>{{name}}</li>
+                    {{/if}}
+                {{/each}}
+                <li style="color: white">{{easterEgg}}</li>
+                <li style="color: white">{{bellasMessage}}</li>
+
+            </ul>
+        </div>
+
+        <div class="profileContainer">
+            <ul class="artistProfile">
+                {{#each artists}}
+                <li>
+                    <h2>{{name}}</h2>
+                    <img src="{{portrait}}"/>
+                    <h3>Artworks:</h3>
+                    <ul class="artworkListing">
+                        {{#each artworks}}
+                        <li><img src="{{image}}"/></li>
+                        <li>{{name}}, {{year}}</li>
+                        {{/each}}
+                    </ul>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+
+    </div>
+</div>
